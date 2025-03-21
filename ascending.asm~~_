@@ -1,0 +1,19 @@
+LXI H,8000    
+MOV C,M       
+DCR C         
+LOOP3: MOV D,C   
+LXI H,8001    
+LOOP2: MOV A,M   
+INX H         
+CMP M         
+JC LOOP1      
+MOV B,M       
+MOV M,A       
+DCX H         
+MOV M,B       
+INX H         
+LOOP1: DCR D      
+JNZ LOOP2     
+DCR C         
+JNZ LOOP3     
+HLT           

@@ -1,0 +1,5 @@
+LDA 3000  
+CMA  
+STA 3001  
+ADI 3002  
+HLT  
